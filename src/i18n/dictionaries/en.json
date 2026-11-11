@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "title": "Daria — Portfolio",
+    "description": "Daria's portfolio: selected work, background and how to get in touch."
+  },
+  "nav": {
+    "label": "Main",
+    "home": "Daria, home",
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "language": {
+    "label": "Language"
+  },
+  "hero": {
+    "name": "Ch. Erdenedari",
+    "role": "Software engineer and graph designer",
+    "photoAlt": "Portrait of Ch. Erdenedari, arms crossed, in a studio"
+  },
+  "profile": {
+    "name": "Daria",
+    "location": "Based in Ulaanbaatar",
+    "projects": "Projects",
+    "years": "Years"
+  },
+  "bio": {
+    "text": "I'm available for website and mobile app development, and for graphic design side projects too. I'm a fast learner, so I'm up for anything new.",
+    "focus": "Code & visual design",
+    "availability": "Open to freelance projects · 2026"
+  },
+  "experience": {
+    "label": "Experience",
+    "items": [
+      {
+        "role": "Software Engineer",
+        "company": "Stoic Education Consulting Firm",
+        "period": "Dec 2025 – Nov 2026",
+        "type": "Full-time · Hybrid",
+        "skills": [
+          "Prompt Engineering",
+          "Graphic Design"
+        ]
+      },
+      {
+        "role": "Instructor and Developer",
+        "company": "Pinecone Studio",
+        "period": "Nov 2024 – Apr 2026",
+        "type": "Full-time · On-site",
+        "skills": [
+          "Engineering",
+          "Software Infrastructure"
+        ]
+      },
+      {
+        "role": "Senior Software Developer",
+        "company": "ECM Billing Center",
+        "period": "Jun 2023 – Nov 2024",
+        "type": "Full-time · Hybrid",
+        "skills": [
+          "Django REST Framework",
+          "PostgreSQL"
+        ]
+      }
+    ]
+  },
+  "work": {
+    "eyebrow": "Selected work",
+    "title": "Recent projects",
+    "intro": "Products I've designed and built — from mobile apps to the backends behind them.",
+    "comingSoon": "Next project — coming soon",
+    "newTab": "opens in a new tab",
+    "items": {
+      "billcenter": {
+        "title": "BillCenter App",
+        "tags": [
+          "Mobile",
+          "Backend"
+        ],
+        "location": "Ulaanbaatar",
+        "alt": "BillCenter app screens: sign-in, bills overview and payment"
+      },
+      "integration": {
+        "title": "Integration Service",
+        "tags": [
+          "Backend",
+          "API integration"
+        ],
+        "location": "Ulaanbaatar",
+        "alt": "Logos of companies connected to the service, including Mbank, Toki, SkyMedia and MostMoney"
+      },
+      "stoic": {
+        "title": "Stoic Education",
+        "tags": [
+          "AI",
+          "Full-stack",
+          "UI/UX"
+        ],
+        "location": "Ulaanbaatar",
+        "alt": "Stoic Education homepage, an admissions planning platform for first-time university applicants"
+      },
+      "uzuulen": {
+        "title": "Uzuulen",
+        "tags": [
+          "Web design",
+          "Real estate"
+        ],
+        "location": "Ulaanbaatar",
+        "alt": "Uzuulen homepage: websites for apartment and real-estate projects, with a glassy 3D ribbon"
+      }
+    }
+  },
+  "posters": {
+    "eyebrow": "Graphic design",
+    "title": "Posters",
+    "intro": "Posters and social media designs for Stoic Education and my own projects.",
+    "items": {
+      "karate": "JKA/WF Mongolia poster for an open karate class on 2 November at 17:00: a boy in a white gi and brown belt in front of a red brushstroke sun",
+      "step-into-college": "Stoic Core poster: “Step into college success — now registering”, with an illustrated gauntlet and an application checklist",
+      "coffee-cat": "Orange poster of a black cat holding a cup of coffee",
+      "stoic-journey": "Stoic carousel from “It all starts with a dream” to “…and ends with achievement”, with a slide of university logos for each year from 2022 to 2025",
+      "save-coffee": "Vintage collage poster about saving 10,000 tögrög a day by skipping coffee",
+      "stand-for-nothing": "Editorial collage poster: “If you stand for nothing, what'll you fall for?” in black and red type on beige paper, with cut-out photos of a woman in a burgundy dress and another in a floral skirt"
+    },
+    "carousel": {
+      "previous": "Previous slide",
+      "next": "Next slide",
+      "slide": "Slide {current} of {total}"
+    },
+    "slides": {
+      "stoic-journey": [
+        "“It all starts with a dream”: a large tree and an empty bench against crumpled blue paper",
+        "2022: a table and chair on top of a grassy hill",
+        "2022 universities: Vanderbilt University, NYU Shanghai, KAIST and Yonsei University",
+        "2023: a wooden chair on a hill with pink wildflowers",
+        "2023 universities: University of Arizona, University of Pennsylvania, Duke, Washington University in St. Louis, Tulane, Stanford and Grinnell College",
+        "2024: a wooden chair on a hill, with monarch butterflies",
+        "2024 universities, including Cornell, MIT, Rice, Emory, Vanderbilt, Boston College, Smith College, Lehigh, Carleton, Union College, Tulane, NYU Shanghai and Bryn Mawr",
+        "2025: a wooden armchair on a hill covered in pink and white flowers",
+        "2025 universities, including the University of Chicago, Columbia, MIT, KAIST, Emory, Vanderbilt, Boston College, Grinnell, Lafayette, the University of Illinois and Bryn Mawr",
+        "“…and ends with achievement.”: the same tree and bench"
+      ],
+      "save-coffee": [
+        "Cover: “Save 10,000 a day — coffee!!”, a vintage collage of cash, bank cards and a cup of coffee",
+        "Coffee lovers spend on average 10,000₮ a day, 300,000₮ a month and 3,650,000₮ a year at coffee shops",
+        "How can this expense be cut to 1,670₮ a day?",
+        "The quickest, easiest way: make your own coffee, with a pour-over coffee maker illustration",
+        "What you need: 500 g of ground beans for 45,000₮, 100 paper filters for 5,000₮ and a drip coffee set for 60,000₮",
+        "The maths: one cup costs 1,620₮, saving 8,330₮ a day, 249,900₮ a month and 2,980,450₮ a year",
+        "Financial discipline isn't giving up what you love; it starts with small habits"
+      ]
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's build your idea.",
+    "text": "Have an idea for a website, an app or a brand? Give me a call and let's talk it through.",
+    "secondary": "View experience",
+    "script": "Say hello"
+  },
+  "footer": {
+    "signoff": [
+      "See you",
+      "soon, Daria"
+    ],
+    "follow": "Follow me on social media:"
+  }
+}

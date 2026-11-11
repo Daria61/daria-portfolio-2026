@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@theme {
+  --color-ink: #0e0e10;
+  --color-cream: #f4f3ea;
+  --color-line: #5f5f62;
+}
+
+/* Hollow, outlined lettering (used for the decorative "Say hello"). */
+@utility text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px color-mix(in oklab, var(--color-cream) 32%, transparent);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-cream);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-cream);
+  outline-offset: 3px;
+}
