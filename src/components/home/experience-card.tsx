@@ -1,8 +1,27 @@
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { Card } from "./card";
 
+type Units = Dictionary["experience"]["units"];
+
+/** Months from start to end ("YYYY-MM"), counting both months like LinkedIn. */
+function monthsBetween(start: string, end: string) {
+  const [startYear, startMonth] = start.split("-").map(Number);
+  const [endYear, endMonth] = end.split("-").map(Number);
+  return (endYear - startYear) * 12 + (endMonth - startMonth) + 1;
+}
+
+/** 18 → "1 year 6 months" / "1 жил 6 сар"; 12 → "1 year"; 8 → "8 months". */
+function formatDuration(months: number, units: Units) {
+  const years = Math.floor(months / 12);
+  const rest = months % 12;
+  const parts: string[] = [];
+  if (years) parts.push(`${years} ${years === 1 ? units.year : units.years}`);
+  if (rest) parts.push(`${rest} ${rest === 1 ? units.month : units.months}`);
+  return parts.join(" ");
+}
+
 export function ExperienceCard({ dict }: { dict: Dictionary }) {
-  const { label, items } = dict.experience;
+  const { label, units, items } = dict.experience;
 
   return (
     <Card id="experience" className="scroll-mt-6">
@@ -42,6 +61,10 @@ export function ExperienceCard({ dict }: { dict: Dictionary }) {
                 </p>
                 <p className="text-xs whitespace-nowrap text-cream/45 @min-[480px]:col-start-2 @min-[480px]:row-start-1">
                   {item.period}
+                  <span className="text-cream/65">
+                    {" · "}
+                    {formatDuration(monthsBetween(item.start, item.end), units)}
+                  </span>
                 </p>
               </div>
               <ul className="mt-3 flex flex-wrap gap-1.5">

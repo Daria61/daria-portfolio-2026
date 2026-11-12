@@ -15,7 +15,7 @@
   },
   "hero": {
     "name": "Ch. Erdenedari",
-    "role": "Software engineer and graph designer",
+    "role": "Software engineer and graphic designer",
     "photoAlt": "Portrait of Ch. Erdenedari, arms crossed, in a studio"
   },
   "profile": {
@@ -31,11 +31,19 @@
   },
   "experience": {
     "label": "Experience",
+    "units": {
+      "year": "year",
+      "years": "years",
+      "month": "month",
+      "months": "months"
+    },
     "items": [
       {
         "role": "Software Engineer",
         "company": "Stoic Education Consulting Firm",
         "period": "Dec 2025 – Nov 2026",
+        "start": "2025-12",
+        "end": "2026-11",
         "type": "Full-time · Hybrid",
         "skills": [
           "Prompt Engineering",
@@ -46,6 +54,8 @@
         "role": "Instructor and Developer",
         "company": "Pinecone Studio",
         "period": "Nov 2024 – Apr 2026",
+        "start": "2024-11",
+        "end": "2026-04",
         "type": "Full-time · On-site",
         "skills": [
           "Engineering",
@@ -56,6 +66,8 @@
         "role": "Senior Software Developer",
         "company": "ECM Billing Center",
         "period": "Jun 2023 – Nov 2024",
+        "start": "2023-06",
+        "end": "2024-11",
         "type": "Full-time · Hybrid",
         "skills": [
           "Django REST Framework",
@@ -66,7 +78,7 @@
   },
   "work": {
     "eyebrow": "Selected work",
-    "title": "Recent projects",
+    "title": "Projects I've worked on",
     "intro": "Products I've designed and built — from mobile apps to the backends behind them.",
     "comingSoon": "Next project — coming soon",
     "newTab": "opens in a new tab",

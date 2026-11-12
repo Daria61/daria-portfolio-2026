@@ -19,7 +19,7 @@ export function SectionHeading({
         </p>
         <h2
           id={id}
-          className="mt-4 text-[clamp(2.5rem,7vw,5rem)] leading-[0.95] font-black tracking-[-0.045em]"
+          className="mt-4 text-[clamp(2.5rem,7vw,5rem)] leading-[0.95] font-black tracking-[-0.045em] text-balance"
         >
           {title}
         </h2>

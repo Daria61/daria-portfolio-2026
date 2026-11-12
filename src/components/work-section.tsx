@@ -78,24 +78,29 @@ function ProjectCard({
       <div className={`@container relative aspect-[4/3] overflow-hidden rounded-[28px] ${CARD_SURFACE}`}>
         {project.logos ? (
           // Logo wall: 5 columns, wide logos span two. Read out as one image.
+          // Centered with flexbox: Safari/WebKit (incl. Instagram's in-app
+          // browser) ignores `h-fit` on an absolutely positioned box, which
+          // stretched the grid to full height and pushed the rows apart.
           <div
             role="img"
             aria-label={text.alt}
-            className="absolute inset-0 m-auto grid h-fit w-[86%] grid-cols-5 gap-2.5 @min-[480px]:w-[78%] @min-[480px]:gap-4"
+            className="absolute inset-0 flex items-center justify-center"
           >
-            {project.logos.map((logo) => (
-              <Image
-                key={logo.src}
-                src={logo.src}
-                alt=""
-                width={logo.wide ? 200 : 100}
-                height={100}
-                sizes={logo.wide ? "240px" : "120px"}
-                // Rounder than the source logos' own corners (up to ~24%), so the
-                // background baked into their corners is always clipped away.
-                className={`h-auto w-full ${logo.wide ? "col-span-2 rounded-[12%/24%]" : "rounded-[24%]"}`}
-              />
-            ))}
+            <div className="grid w-[86%] grid-cols-5 gap-2.5 @min-[480px]:w-[78%] @min-[480px]:gap-4">
+              {project.logos.map((logo) => (
+                <Image
+                  key={logo.src}
+                  src={logo.src}
+                  alt=""
+                  width={logo.wide ? 200 : 100}
+                  height={100}
+                  sizes={logo.wide ? "240px" : "120px"}
+                  // Rounder than the source logos' own corners (up to ~24%), so the
+                  // background baked into their corners is always clipped away.
+                  className={`h-auto w-full ${logo.wide ? "col-span-2 rounded-[12%/24%]" : "rounded-[24%]"}`}
+                />
+              ))}
+            </div>
           </div>
         ) : project.screens ? (
           // App screens side by side. Read out as one image.
