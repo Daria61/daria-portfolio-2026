@@ -2,7 +2,7 @@
 // src/i18n/dictionaries/*.json.
 
 export const stats = {
-  projects: "+15",
+  projects: "15+",
   years: "4",
 };
 

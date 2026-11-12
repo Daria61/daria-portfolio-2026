@@ -25,7 +25,7 @@
     "years": "Years"
   },
   "bio": {
-    "text": "I'm available for website and mobile app development, and for graphic design side projects too. I'm a fast learner, so I'm up for anything new.",
+    "text": "Software engineer and graphic designer with 4 years of experience. I build high-converting websites, landing pages, and brand visuals designed to grow your business and save you time.",
     "focus": "Code & visual design",
     "availability": "Open to freelance projects · 2026"
   },
@@ -44,11 +44,7 @@
         "period": "Nov 2026 – Present",
         "start": "2026-11",
         "end": null,
-        "type": "Freelance",
-        "skills": [
-          "Web & mobile apps",
-          "Graphic design"
-        ]
+        "type": "Freelance"
       },
       {
         "role": "Software Engineer",
@@ -56,11 +52,7 @@
         "period": "Dec 2025 – Nov 2026",
         "start": "2025-12",
         "end": "2026-11",
-        "type": "Full-time · Hybrid",
-        "skills": [
-          "Prompt Engineering",
-          "Graphic Design"
-        ]
+        "type": "Full-time · Hybrid"
       },
       {
         "role": "Instructor and Developer",
@@ -68,11 +60,7 @@
         "period": "Nov 2024 – Apr 2026",
         "start": "2024-11",
         "end": "2026-04",
-        "type": "Full-time · On-site",
-        "skills": [
-          "Engineering",
-          "Software Infrastructure"
-        ]
+        "type": "Full-time · On-site"
       },
       {
         "role": "Senior Software Developer",
@@ -80,18 +68,14 @@
         "period": "Jun 2023 – Nov 2024",
         "start": "2023-06",
         "end": "2024-11",
-        "type": "Full-time · Hybrid",
-        "skills": [
-          "Django REST Framework",
-          "PostgreSQL"
-        ]
+        "type": "Full-time · Hybrid"
       }
     ]
   },
   "work": {
     "eyebrow": "Selected work",
     "title": "Projects I've worked on",
-    "intro": "Products I've designed and built — from mobile apps to the backends behind them.",
+    "intro": "From mobile apps and complex systems to landing pages and websites that boost business sales.",
     "comingSoon": "Next project — coming soon",
     "newTab": "opens in a new tab",
     "items": {
@@ -121,7 +105,7 @@
           "UI/UX"
         ],
         "location": "Ulaanbaatar",
-        "alt": "Stoic Education homepage, an admissions planning platform for first-time university applicants"
+        "alt": "Stoic Education Academy homepage: “Begin Your Journey with Stoic” between two classical columns, a platform for SAT, IELTS and college preparation classes"
       },
       "pinebaatar": {
         "title": "Pinebaatar",
@@ -178,52 +162,51 @@
     "labels": {
       "oneTime": "One-time payment",
       "mostPopular": "Most popular",
-      "afterLaunch": "After launch",
       "cta": "Get started"
     },
     "promo": {
       "label": "Launch promo",
-      "text": "For my first 2 clients: Business Pro for 990,000₮, in exchange for an honest review on my Facebook page and permission to feature your site in my portfolio."
+      "text": "First 2 orders get Business Pro for just 990,000₮ (in exchange for a review and a spot in my portfolio)."
     },
     "packages": {
       "starter": {
         "name": "Starter",
         "tagline": "Introduction",
-        "for": "Service businesses, clinics and consultants who need a clean online presence without frequent edits.",
+        "for": "For service shops, clinics and consultants wanting a clean online presence.",
         "delivery": "Ready in 3–5 business days",
         "features": [
-          "A single high-converting landing page",
-          "Looks great on phones and computers",
-          "Direct call, Messenger and location buttons",
-          "Basic SEO and fast loading"
+          "1 sales-focused landing page",
+          "Works perfectly on phones and computers",
+          "Direct call, Messenger and location links",
+          "Fast loading, basic SEO"
         ],
-        "care": "One-time delivery, no monthly fee. Small edits are billed per request."
+        "care": "Maintenance: one-time handover, no monthly fee."
       },
       "business": {
         "name": "Business Pro",
         "tagline": "Sales",
-        "for": "Product sellers, courses and restaurants that want to take orders and update items themselves.",
+        "for": "For product sellers, courses and restaurants wanting to take orders and edit items themselves.",
         "delivery": "Ready in 7–10 business days",
         "features": [
           "Everything in Starter",
-          "Admin panel to add and edit products, prices and text",
-          "Order or booking form that sends orders to email, Telegram or a dashboard",
-          "1-hour training on using the panel"
+          "Admin panel: change products, prices and photos yourself",
+          "Order system (orders go straight to email or Telegram)",
+          "1-hour video training on using the system"
         ],
-        "care": "1 month of free bug fixes after launch."
+        "care": "1 month of free bug fixes and warranty."
       },
       "premium": {
         "name": "Premium",
         "tagline": "Full system",
-        "for": "Growing companies that want full automation, QPay payments and hands-free care.",
+        "for": "For growing companies wanting full automation, QPay payments and hands-free care.",
         "delivery": "Ready in 10–14 business days",
         "features": [
           "Everything in Business Pro",
-          "Online payments (QPay / SocialPay) or advanced CRM integration",
-          "Custom animations and a multi-section sales funnel",
+          "Direct online payments (QPay / SocialPay)",
+          "Custom design built to improve your sales flow",
           "Priority technical support"
         ],
-        "care": "3 months of free full care and updates, then 100,000₮/month (optional)."
+        "care": "3 months of free care (then 100,000₮/month, optional)."
       }
     },
     "note": "Domain (about 40,000₮ a year) and hosting/server costs are paid separately by you, in your own name, so the website and domain are fully yours.",
@@ -281,7 +264,7 @@
   "contact": {
     "eyebrow": "Contact",
     "title": "Let's build your idea.",
-    "text": "Have an idea for a website, an app or a brand? Give me a call and let's talk it through.",
+    "text": "Have an idea for a website, an app or a brand? Get in touch for a consultation.",
     "pricing": "See pricing",
     "work": "See my work",
     "script": "Say hello"

@@ -1,4 +1,4 @@
-import { CheckIcon, ClockIcon, LayersIcon } from "./icons";
+import { CheckIcon, ClockIcon, LayersIcon, PinIcon } from "./icons";
 
 export type PriceCardProps = {
   number: number;
@@ -13,8 +13,8 @@ export type PriceCardProps = {
   /** Icon line under the price: delivery time (clock) or quantity (stack). */
   meta: { icon: "clock" | "stack"; text: string };
   features: string[];
-  /** Boxed note above the button, e.g. what happens after launch. */
-  footer?: { label: string; text: string };
+  /** One light line right above the button, e.g. what happens after launch. */
+  note?: string;
   cta: { href: string; label: string };
   /** Shown as a badge on the card's top edge; also highlights the card. */
   badge?: string;
@@ -30,9 +30,11 @@ const ROW_SPAN: Record<number, string> = {
 };
 
 /**
- * One pricing package. On desktop its parts sit on rows shared with the cards
- * beside it (CSS subgrid), so prices, lists and buttons line up across a row
- * of cards whatever the text lengths. The parent <ul> must be a 3-column grid.
+ * One pricing package, in the order people scan a price list: name, price,
+ * who it's for, what's included, button. On desktop its parts sit on rows
+ * shared with the cards beside it (CSS subgrid), so prices, lists and buttons
+ * line up across a row of cards whatever the text lengths. The parent <ul>
+ * must be a 3-column grid.
  * (No @container on the card: container queries turn a subgrid into "none".)
  */
 export function PriceCard({
@@ -44,14 +46,14 @@ export function PriceCard({
   priceNote,
   meta,
   features,
-  footer,
+  note,
   cta,
   badge,
   headingLevel: Heading = "h3",
 }: PriceCardProps) {
   const featured = Boolean(badge);
   const muted = featured ? "text-ink/60" : "text-cream/55";
-  const rows = 5 + (description ? 1 : 0) + (footer ? 1 : 0);
+  const rows = 5 + (description ? 1 : 0) + (note ? 1 : 0);
   const MetaIcon = meta.icon === "clock" ? ClockIcon : LayersIcon;
 
   return (
@@ -74,15 +76,9 @@ export function PriceCard({
         </p>
       </div>
 
-      {description && (
-        <p className={`mt-4 text-[15px] leading-relaxed ${featured ? "text-ink/75" : "text-cream/75"}`}>
-          {description}
-        </p>
-      )}
-
-      <div className="mt-6">
+      <div className="mt-5">
         {/* A range wraps at the dash, never inside a number, when the card is narrow. */}
-        <p className="text-xl font-bold tracking-tight tabular-nums sm:text-2xl lg:text-xl xl:text-2xl">
+        <p className="text-[22px] font-extrabold tracking-tight tabular-nums sm:text-[26px] lg:text-[22px] xl:text-[26px]">
           {price.parts.map((part, i) => (
             <span key={part}>
               {i > 0 && " – "}
@@ -98,13 +94,19 @@ export function PriceCard({
         )}
       </div>
 
-      <p className={`mt-4 flex items-center gap-2 text-sm ${featured ? "text-ink/80" : "text-cream/80"}`}>
+      <p className={`mt-3 flex items-center gap-2 text-sm ${featured ? "text-ink/80" : "text-cream/80"}`}>
         <MetaIcon className="size-4 shrink-0" />
         {meta.text}
       </p>
 
+      {description && (
+        <p className={`mt-5 text-[15px] leading-relaxed ${featured ? "text-ink/75" : "text-cream/75"}`}>
+          {description}
+        </p>
+      )}
+
       <ul
-        className={`mt-6 space-y-3 border-t pt-6 text-[15px] ${
+        className={`mt-5 space-y-3 border-t pt-5 text-[15px] ${
           featured ? "border-ink/15" : "border-cream/10"
         }`}
       >
@@ -116,24 +118,23 @@ export function PriceCard({
         ))}
       </ul>
 
-      {footer && (
-        // On desktop this box stretches to the tallest card's box.
-        <div
-          className={`mt-6 rounded-2xl px-4 py-3 text-sm leading-relaxed ${
-            featured ? "bg-ink/[0.06]" : "bg-cream/[0.04]"
+      {note && (
+        // A light line, not a box. On desktop it sits at the bottom of its
+        // shared row, right above the button, whatever the list lengths.
+        <p
+          className={`mt-6 flex gap-2 text-sm leading-snug italic lg:self-end ${
+            featured ? "text-ink/65" : "text-cream/60"
           }`}
         >
-          <p className={`font-mono text-[11px] uppercase tracking-[0.15em] ${muted}`}>
-            {footer.label}
-          </p>
-          <p className={`mt-1 ${featured ? "text-ink/85" : "text-cream/80"}`}>{footer.text}</p>
-        </div>
+          <PinIcon className="mt-0.5 size-3.5 shrink-0 not-italic" />
+          {note}
+        </p>
       )}
 
       <a
         href={cta.href}
         className={`flex h-12 items-center justify-center rounded-full text-[15px] font-semibold transition-colors ${
-          footer ? "mt-4" : "mt-6"
+          note ? "mt-4" : "mt-6"
         } ${
           featured
             ? "bg-ink text-cream hover:bg-ink/85 focus-visible:outline-ink"

@@ -71,16 +71,6 @@ export function ExperienceCard({ dict }: { dict: Dictionary }) {
                   )}
                 </p>
               </div>
-              <ul className="mt-3 flex flex-wrap gap-1.5">
-                {item.skills.map((skill) => (
-                  <li
-                    key={skill}
-                    className="rounded-full border border-cream/10 bg-cream/[0.03] px-2.5 py-1 text-xs text-cream/65"
-                  >
-                    {skill}
-                  </li>
-                ))}
-              </ul>
             </li>
           );
         })}

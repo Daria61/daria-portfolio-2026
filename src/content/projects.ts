@@ -56,9 +56,9 @@ export const projects: Project[] = [
   },
   {
     id: "stoic",
-    image: "/work/stoic-homepage.jpg",
-    frame: { width: 1600, height: 866 },
-    href: "https://stoic.education/",
+    image: "/work/stoic-academy-homepage.jpg",
+    frame: { width: 1600, height: 777 },
+    href: "https://academy.stoic.education/",
   },
   {
     id: "pinebaatar",

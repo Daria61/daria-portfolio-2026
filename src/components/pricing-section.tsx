@@ -64,7 +64,7 @@ export function PricingSection({ dict }: { dict: Dictionary }) {
               priceNote={text.labels.oneTime}
               meta={{ icon: "clock", text: item.delivery }}
               features={item.features}
-              footer={{ label: text.labels.afterLaunch, text: item.care }}
+              note={item.care}
               cta={{ href: "#contact", label: text.labels.cta }}
               badge={pkg.featured ? text.labels.mostPopular : undefined}
             />

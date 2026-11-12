@@ -71,6 +71,15 @@ export function InfoIcon({ className }: IconProps) {
   );
 }
 
+export function PinIcon({ className }: IconProps) {
+  return (
+    <Icon className={className}>
+      <path d="M12 17v5" />
+      <path d="M9 10.8a2 2 0 0 1-1.1 1.8l-1.8.9A2 2 0 0 0 5 15.2V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.8a2 2 0 0 0-1.1-1.8l-1.8-.9a2 2 0 0 1-1.1-1.8V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z" />
+    </Icon>
+  );
+}
+
 export function LayersIcon({ className }: IconProps) {
   return (
     <Icon className={className}>
