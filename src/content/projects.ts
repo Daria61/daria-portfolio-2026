@@ -61,9 +61,9 @@ export const projects: Project[] = [
     href: "https://stoic.education/",
   },
   {
-    id: "uzuulen",
-    image: "/work/landing-homepage.jpg",
-    frame: { width: 1600, height: 1000 },
-    href: "https://landingtemplate-alpha.vercel.app/",
+    id: "pinebaatar",
+    image: "/work/pinebaatar-homepage.jpg",
+    frame: { width: 1600, height: 944 },
+    href: "https://pinebaatar.pinecone.mn/",
   },
 ];

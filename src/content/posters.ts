@@ -11,28 +11,17 @@ export type Poster =
   | { id: PosterId; src: string; slides?: never }
   | { id: CarouselId; slides: string[]; src?: never };
 
-// All posters are 4:5 (Instagram post size). The two dark posters sit in the
-// middle column (positions 2 and 5) so each desktop row reads light, dark,
-// light. With four light posters, one 2-column (tablet) row pairs two lights.
+// All posters are 4:5 (Instagram post size), shown in this order: a 3-column
+// grid on desktop, 2 columns on tablets, a swipeable row on phones.
 export const posters: Poster[] = [
   { id: "karate", src: "/posters/karate-open-class.webp" }, // light
   {
-    // dark blue/green
-    id: "stoic-journey",
-    slides: [
-      "01-dream.webp",
-      "02-2022.webp",
-      "03-2022-universities.png",
-      "04-2023.webp",
-      "05-2023-universities.png",
-      "06-2024.webp",
-      "07-2024-universities.png",
-      "08-2025.webp",
-      "09-2025-universities.png",
-      "10-achievement.webp",
-    ].map((file) => `/posters/stoic-journey/${file}`),
+    // "8 цаг хөдөлмөрлөөд… 8 цаг оочирлов." — night photos, white frame
+    id: "eight-hours",
+    slides: ["01-work.webp", "02-queue.webp"].map((file) => `/posters/8-hours/${file}`),
   },
   { id: "step-into-college", src: "/posters/Instagram post - 4.png" }, // light
+  { id: "stoic-sat", src: "/posters/stoic-sat.webp" }, // light blue, dark bottom
   {
     // cream
     id: "save-coffee",
@@ -40,6 +29,5 @@ export const posters: Poster[] = [
     // matching PDFs 18–23 (browsers can't show a PDF as an image).
     slides: [17, 18, 19, 20, 21, 22, 23].map((n) => `/posters/Instagram post - ${n}.png`),
   },
-  { id: "coffee-cat", src: "/posters/Instagram post - 29.png" }, // orange
-  { id: "stand-for-nothing", src: "/posters/stand-for-nothing.webp" }, // beige
+  { id: "karate-academics", src: "/posters/karate-academics.webp" }, // dark blue
 ];

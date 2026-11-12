@@ -39,6 +39,18 @@
     },
     "items": [
       {
+        "role": "Freelance Developer & Designer",
+        "company": "Self-employed",
+        "period": "Nov 2026 – Present",
+        "start": "2026-11",
+        "end": null,
+        "type": "Freelance",
+        "skills": [
+          "Web & mobile apps",
+          "Graphic design"
+        ]
+      },
+      {
         "role": "Software Engineer",
         "company": "Stoic Education Consulting Firm",
         "period": "Dec 2025 – Nov 2026",
@@ -111,14 +123,14 @@
         "location": "Ulaanbaatar",
         "alt": "Stoic Education homepage, an admissions planning platform for first-time university applicants"
       },
-      "uzuulen": {
-        "title": "Uzuulen",
+      "pinebaatar": {
+        "title": "Pinebaatar",
         "tags": [
-          "Web design",
-          "Real estate"
+          "Web",
+          "Talent platform"
         ],
         "location": "Ulaanbaatar",
-        "alt": "Uzuulen homepage: websites for apartment and real-estate projects, with a glassy 3D ribbon"
+        "alt": "Pinebaatar homepage: “Tech talent trained for technology companies”, with portraits of Pinecone graduates"
       }
     }
   },
@@ -129,10 +141,10 @@
     "items": {
       "karate": "JKA/WF Mongolia poster for an open karate class on 2 November at 17:00: a boy in a white gi and brown belt in front of a red brushstroke sun",
       "step-into-college": "Stoic Core poster: “Step into college success — now registering”, with an illustrated gauntlet and an application checklist",
-      "coffee-cat": "Orange poster of a black cat holding a cup of coffee",
-      "stoic-journey": "Stoic carousel from “It all starts with a dream” to “…and ends with achievement”, with a slide of university logos for each year from 2022 to 2025",
+      "stoic-sat": "Stoic poster: intensive SAT class now enrolling, with three students and their scores: T. Anar 1550, U. Tselmeg 1570, Kh. Ariuntuguldur 1540",
+      "eight-hours": "Two-slide photo poster dated 1 October 2026: “8 hours of work… 8 hours in a queue.”, long-exposure night photos full of light trails",
       "save-coffee": "Vintage collage poster about saving 10,000 tögrög a day by skipping coffee",
-      "stand-for-nothing": "Editorial collage poster: “If you stand for nothing, what'll you fall for?” in black and red type on beige paper, with cut-out photos of a woman in a burgundy dress and another in a floral skirt"
+      "karate-academics": "JKA Mongolia poster “Academic success and karate”: students who train in traditional martial arts show 30% higher focus and persistence, with university pennants and a girl receiving a medal"
     },
     "carousel": {
       "previous": "Previous slide",
@@ -140,17 +152,9 @@
       "slide": "Slide {current} of {total}"
     },
     "slides": {
-      "stoic-journey": [
-        "“It all starts with a dream”: a large tree and an empty bench against crumpled blue paper",
-        "2022: a table and chair on top of a grassy hill",
-        "2022 universities: Vanderbilt University, NYU Shanghai, KAIST and Yonsei University",
-        "2023: a wooden chair on a hill with pink wildflowers",
-        "2023 universities: University of Arizona, University of Pennsylvania, Duke, Washington University in St. Louis, Tulane, Stanford and Grinnell College",
-        "2024: a wooden chair on a hill, with monarch butterflies",
-        "2024 universities, including Cornell, MIT, Rice, Emory, Vanderbilt, Boston College, Smith College, Lehigh, Carleton, Union College, Tulane, NYU Shanghai and Bryn Mawr",
-        "2025: a wooden armchair on a hill covered in pink and white flowers",
-        "2025 universities, including the University of Chicago, Columbia, MIT, KAIST, Emory, Vanderbilt, Boston College, Grinnell, Lafayette, the University of Illinois and Bryn Mawr",
-        "“…and ends with achievement.”: the same tree and bench"
+      "eight-hours": [
+        "“8 hours of work”: a long-exposure night photo of streaking red, white and blue lights, dated 2026.10.1",
+        "“…8 hours in a queue.”: a long-exposure night photo of a Petrovis petrol station price sign with light trails from passing cars, dated 2026.10.1"
       ],
       "save-coffee": [
         "Cover: “Save 10,000 a day — coffee!!”, a vintage collage of cash, bank cards and a cup of coffee",
@@ -163,11 +167,123 @@
       ]
     }
   },
+  "pricing": {
+    "meta": {
+      "title": "Pricing — Daria",
+      "description": "Website packages from 650,000₮ and Boost-ready poster packages from 70,000₮."
+    },
+    "eyebrow": "Pricing",
+    "title": "Website packages",
+    "intro": "One-time payment. Pick the package that fits your business.",
+    "labels": {
+      "oneTime": "One-time payment",
+      "mostPopular": "Most popular",
+      "afterLaunch": "After launch",
+      "cta": "Get started"
+    },
+    "promo": {
+      "label": "Launch promo",
+      "text": "For my first 2 clients: Business Pro for 990,000₮, in exchange for an honest review on my Facebook page and permission to feature your site in my portfolio."
+    },
+    "packages": {
+      "starter": {
+        "name": "Starter",
+        "tagline": "Introduction",
+        "for": "Service businesses, clinics and consultants who need a clean online presence without frequent edits.",
+        "delivery": "Ready in 3–5 business days",
+        "features": [
+          "A single high-converting landing page",
+          "Looks great on phones and computers",
+          "Direct call, Messenger and location buttons",
+          "Basic SEO and fast loading"
+        ],
+        "care": "One-time delivery, no monthly fee. Small edits are billed per request."
+      },
+      "business": {
+        "name": "Business Pro",
+        "tagline": "Sales",
+        "for": "Product sellers, courses and restaurants that want to take orders and update items themselves.",
+        "delivery": "Ready in 7–10 business days",
+        "features": [
+          "Everything in Starter",
+          "Admin panel to add and edit products, prices and text",
+          "Order or booking form that sends orders to email, Telegram or a dashboard",
+          "1-hour training on using the panel"
+        ],
+        "care": "1 month of free bug fixes after launch."
+      },
+      "premium": {
+        "name": "Premium",
+        "tagline": "Full system",
+        "for": "Growing companies that want full automation, QPay payments and hands-free care.",
+        "delivery": "Ready in 10–14 business days",
+        "features": [
+          "Everything in Business Pro",
+          "Online payments (QPay / SocialPay) or advanced CRM integration",
+          "Custom animations and a multi-section sales funnel",
+          "Priority technical support"
+        ],
+        "care": "3 months of free full care and updates, then 100,000₮/month (optional)."
+      }
+    },
+    "note": "Domain (about 40,000₮ a year) and hosting/server costs are paid separately by you, in your own name, so the website and domain are fully yours.",
+    "posters": {
+      "eyebrow": "Graphic design",
+      "title": "Boost-ready posters",
+      "intro": "I don't just draw pretty pictures. I design sales posters that grab attention in 3 seconds and make your Facebook Boost budget go further.",
+      "why": {
+        "label": "Why it matters",
+        "text": "Boosted posters packed with small text get less reach on Facebook, so your ad budget reaches fewer people. A clear, focused poster gets you more for the same spend."
+      },
+      "labels": {
+        "perPoster": "≈{price}₮ per poster",
+        "perPosterUnit": "/ poster",
+        "perMonthUnit": "/ month",
+        "bestSeller": "Best seller"
+      },
+      "packages": {
+        "single": {
+          "name": "Single",
+          "tagline": "One poster",
+          "quantity": "1 static poster",
+          "features": [
+            "Custom design in Facebook/Instagram size",
+            "Polished headline and text layout",
+            "2 small revisions",
+            "Delivered in 1–2 days"
+          ]
+        },
+        "starter": {
+          "name": "Starter Pack",
+          "tagline": "Monthly basics",
+          "quantity": "6 posters a month",
+          "features": [
+            "Consistent brand look and colors",
+            "A mix of product/service and trust-building posts",
+            "Facebook Boost text-ratio check",
+            "Priority 24–48h turnaround"
+          ]
+        },
+        "growth": {
+          "name": "Growth Pack",
+          "tagline": "Sales bundle",
+          "quantity": "12 posters a month (3 a week)",
+          "features": [
+            "Everything in Starter Pack",
+            "Up to 2 carousel posts",
+            "Bonus: free Facebook cover banner refresh"
+          ]
+        }
+      },
+      "note": "You provide the product photos and the raw information. Each poster includes up to 2 small text or color tweaks."
+    }
+  },
   "contact": {
     "eyebrow": "Contact",
     "title": "Let's build your idea.",
     "text": "Have an idea for a website, an app or a brand? Give me a call and let's talk it through.",
-    "secondary": "View experience",
+    "pricing": "See pricing",
+    "work": "See my work",
     "script": "Say hello"
   },
   "footer": {

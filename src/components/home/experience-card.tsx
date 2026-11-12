@@ -61,10 +61,14 @@ export function ExperienceCard({ dict }: { dict: Dictionary }) {
                 </p>
                 <p className="text-xs whitespace-nowrap text-cream/45 @min-[480px]:col-start-2 @min-[480px]:row-start-1">
                   {item.period}
-                  <span className="text-cream/65">
-                    {" · "}
-                    {formatDuration(monthsBetween(item.start, item.end), units)}
-                  </span>
+                  {/* Ongoing roles ("end": null) show no duration: it would need
+                      today's date, which a static page can't keep current. */}
+                  {item.end && (
+                    <span className="text-cream/65">
+                      {" · "}
+                      {formatDuration(monthsBetween(item.start, item.end), units)}
+                    </span>
+                  )}
                 </p>
               </div>
               <ul className="mt-3 flex flex-wrap gap-1.5">

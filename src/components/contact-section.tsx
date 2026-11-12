@@ -1,7 +1,6 @@
 import { Marck_Script } from "next/font/google";
 import Link from "next/link";
 import { phone } from "@/content/profile";
-import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { ArrowUpRightIcon } from "./icons";
 
@@ -13,7 +12,15 @@ const scriptFont = Marck_Script({
   preload: false,
 });
 
-export function ContactSection({ lang, dict }: { lang: Locale; dict: Dictionary }) {
+export function ContactSection({
+  dict,
+  secondary,
+}: {
+  dict: Dictionary;
+  /** Outlined button next to the phone number: "See pricing" on the home
+   * page, "See my work" on the pricing page. */
+  secondary: { href: string; label: string };
+}) {
   const text = dict.contact;
 
   return (
@@ -52,10 +59,10 @@ export function ContactSection({ lang, dict }: { lang: Locale; dict: Dictionary 
           <ArrowUpRightIcon className="size-5" />
         </a>
         <Link
-          href={`/${lang}#experience`}
+          href={secondary.href}
           className="inline-flex h-14 items-center rounded-full border border-line px-8 text-lg font-semibold whitespace-nowrap transition-colors hover:border-cream/70"
         >
-          {text.secondary}
+          {secondary.label}
         </Link>
       </div>
 

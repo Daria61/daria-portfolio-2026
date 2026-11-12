@@ -19,6 +19,21 @@
 
 html {
   color-scheme: dark;
+  /* Keep anchor targets (#about, #work, #contact...) clear of the sticky
+     header; values match its height at each breakpoint (site-header.tsx). */
+  scroll-padding-top: 8.5rem;
+}
+
+@media (width >= 40rem) {
+  html {
+    scroll-padding-top: 10rem;
+  }
+}
+
+@media (width >= 48rem) {
+  html {
+    scroll-padding-top: 6.25rem;
+  }
 }
 
 body {

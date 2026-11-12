@@ -6,7 +6,7 @@ export function PortraitCard({ dict }: { dict: Dictionary }) {
     // Phones: full-width card above the info cards.
     // 640–1279px: left column, keeps its ratio and stays in view while the cards scroll.
     // 1280px+: 510px column that stretches to the cards' height.
-    <div className="@container relative aspect-[73/100] w-full overflow-hidden rounded-[28px] bg-cream/5 sm:sticky sm:top-6 sm:self-start xl:relative xl:top-auto xl:aspect-auto xl:min-h-[699px] xl:self-stretch">
+    <div className="@container relative aspect-[73/100] w-full overflow-hidden rounded-[28px] bg-cream/5 sm:sticky sm:top-[11.5rem] sm:self-start md:top-32 xl:relative xl:top-auto xl:aspect-auto xl:min-h-[699px] xl:self-stretch">
       {/* Positioned layer for the image: next/image `fill` needs an absolute/relative
           parent, and the card itself is `sticky` on mid-size screens. */}
       <div className="absolute inset-0">

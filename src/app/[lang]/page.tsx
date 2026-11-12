@@ -15,7 +15,10 @@ export default async function HomePage() {
       </div>
       <WorkSection dict={dict} />
       <PostersSection dict={dict} />
-      <ContactSection lang={lang} dict={dict} />
+      <ContactSection
+        dict={dict}
+        secondary={{ href: `/${lang}/pricing`, label: dict.contact.pricing }}
+      />
     </main>
   );
 }

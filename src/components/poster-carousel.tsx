@@ -74,11 +74,14 @@ export function PosterCarousel({ label, slides, previousLabel, nextLabel, slideL
         ))}
       </div>
 
+      {/* Compact ("1/2") and tighter to the corner on small cards (under
+          768px), so it doesn't cover headlines that run close to a poster's
+          top-right edge (e.g. "8 ЦАГ ХӨДӨЛМӨРЛӨӨД" ends at 81% of the width). */}
       <p
         aria-live="polite"
-        className="absolute top-3 right-3 rounded-full bg-black/60 px-2.5 py-1 font-mono text-xs font-bold text-white backdrop-blur-sm"
+        className="absolute top-2 right-2 rounded-full bg-black/60 px-2 py-0.5 font-mono text-[10px] font-bold text-white backdrop-blur-sm md:top-3 md:right-3 md:px-2.5 md:py-1 md:text-xs"
       >
-        {index + 1} / {total}
+        {index + 1}/{total}
       </p>
 
       <button

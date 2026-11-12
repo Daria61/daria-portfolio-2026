@@ -17,7 +17,11 @@ export function SiteHeader({ lang, dict }: Props) {
   ];
 
   return (
-    <header className="flex flex-wrap items-center justify-between gap-y-3 px-4 py-4 sm:px-8 sm:py-6 md:grid md:grid-cols-[1fr_auto_1fr] md:gap-x-6">
+    // Sticky: stays at the top while scrolling, over a blurred, mostly-opaque
+    // background so the page reads cleanly underneath. Its height (about
+    // 136px on phones, 160px at 640–767px, 100px from 768px) is mirrored by
+    // scroll-padding-top in globals.css so anchor links land below it.
+    <header className="sticky top-0 z-40 flex flex-wrap items-center justify-between gap-y-3 bg-ink/80 px-4 py-3 backdrop-blur-md sm:px-8 sm:py-6 md:grid md:grid-cols-[1fr_auto_1fr] md:gap-x-6">
       <Link
         href={`/${lang}`}
         aria-label={dict.nav.home}
