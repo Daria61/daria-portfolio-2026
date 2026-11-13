@@ -1,6 +1,9 @@
 // Language-independent profile data. Text that changes per language lives in
 // src/i18n/dictionaries/*.json.
 
+/** The live site's address (used for full URLs in link previews). */
+export const siteUrl = "https://daria.flowagency.mn";
+
 export const stats = {
   projects: "15+",
   years: "4",

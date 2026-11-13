@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { siteUrl } from "@/content/profile";
 import { locales } from "@/i18n/config";
 import { getDictionary, getLocale } from "@/i18n/get-dictionary";
 import "../globals.css";
@@ -24,8 +25,13 @@ export function generateStaticParams() {
 export async function generateMetadata(): Promise<Metadata> {
   const dict = await getDictionary();
   return {
+    // Makes the link-preview image (src/app/opengraph-image.png) a full URL,
+    // which Facebook, Messenger and others need to show it.
+    metadataBase: new URL(siteUrl),
     title: dict.meta.title,
     description: dict.meta.description,
+    // Large preview image on X/Twitter too (it reuses the Open Graph image).
+    twitter: { card: "summary_large_image" },
   };
 }
 
