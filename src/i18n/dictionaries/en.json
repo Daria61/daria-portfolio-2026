@@ -158,11 +158,12 @@
     },
     "eyebrow": "Pricing",
     "title": "Website packages",
-    "intro": "One-time payment. Pick the package that fits your business.",
+    "intro": "Pick the package that fits your business.",
     "labels": {
       "oneTime": "One-time payment",
       "mostPopular": "Most popular",
-      "cta": "Get started"
+      "cta": "Get started",
+      "message": "Hello! I'd like to order the {package} package."
     },
     "promo": {
       "label": "Launch promo",
@@ -177,8 +178,7 @@
         "features": [
           "1 sales-focused landing page",
           "Works perfectly on phones and computers",
-          "Direct call, Messenger and location links",
-          "Fast loading, basic SEO"
+          "Direct call, Messenger and location links"
         ],
         "care": "Maintenance: one-time handover, no monthly fee."
       },
@@ -191,7 +191,7 @@
           "Everything in Starter",
           "Admin panel: change products, prices and photos yourself",
           "Order system (orders go straight to email or Telegram)",
-          "1-hour video training on using the system"
+          "1-hour training on using the system"
         ],
         "care": "1 month of free bug fixes and warranty."
       },
@@ -203,8 +203,7 @@
         "features": [
           "Everything in Business Pro",
           "Direct online payments (QPay / SocialPay)",
-          "Custom design built to improve your sales flow",
-          "Priority technical support"
+          "Custom design built to improve your sales flow"
         ],
         "care": "3 months of free care (then 100,000₮/month, optional)."
       }
@@ -213,16 +212,13 @@
     "posters": {
       "eyebrow": "Graphic design",
       "title": "Boost-ready posters",
-      "intro": "I don't just draw pretty pictures. I design sales posters that grab attention in 3 seconds and make your Facebook Boost budget go further.",
-      "why": {
-        "label": "Why it matters",
-        "text": "Boosted posters packed with small text get less reach on Facebook, so your ad budget reaches fewer people. A clear, focused poster gets you more for the same spend."
-      },
+      "intro": "I design sales posters that grab attention in 3 seconds and make your Facebook Boost budget go further.",
       "labels": {
         "perPoster": "≈{price}₮ per poster",
         "perPosterUnit": "/ poster",
         "perMonthUnit": "/ month",
-        "bestSeller": "Best seller"
+        "bestSeller": "Best seller",
+        "message": "Hello! I'd like to order the {package} poster package."
       },
       "packages": {
         "single": {
@@ -244,7 +240,7 @@
             "Consistent brand look and colors",
             "A mix of product/service and trust-building posts",
             "Facebook Boost text-ratio check",
-            "Priority 24–48h turnaround"
+            "Posters delivered one by one, in order"
           ]
         },
         "growth": {

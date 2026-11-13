@@ -15,7 +15,8 @@ export type PriceCardProps = {
   features: string[];
   /** One light line right above the button, e.g. what happens after launch. */
   note?: string;
-  cta: { href: string; label: string };
+  /** With `newTabLabel`, the link opens in a new tab (e.g. Messenger). */
+  cta: { href: string; label: string; newTabLabel?: string };
   /** Shown as a badge on the card's top edge; also highlights the card. */
   badge?: string;
   /** Heading level for the package name, one below its section's heading. */
@@ -133,6 +134,7 @@ export function PriceCard({
 
       <a
         href={cta.href}
+        {...(cta.newTabLabel && { target: "_blank", rel: "noopener noreferrer" })}
         className={`flex h-12 items-center justify-center rounded-full text-[15px] font-semibold transition-colors ${
           note ? "mt-4" : "mt-6"
         } ${
@@ -142,6 +144,7 @@ export function PriceCard({
         }`}
       >
         {cta.label}
+        {cta.newTabLabel && <span className="sr-only"> ({cta.newTabLabel})</span>}
       </a>
     </li>
   );

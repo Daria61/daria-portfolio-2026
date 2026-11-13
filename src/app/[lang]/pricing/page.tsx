@@ -19,7 +19,7 @@ export default async function PricingPage() {
     <main className="flex-1">
       <PricingSection dict={dict} />
       <PosterPricingSection dict={dict} />
-      {/* Each package's "Get started" button scrolls down to this. */}
+      {/* Package buttons open Messenger; this is for calling instead. */}
       <ContactSection
         dict={dict}
         secondary={{ href: `/${lang}#work`, label: dict.contact.work }}

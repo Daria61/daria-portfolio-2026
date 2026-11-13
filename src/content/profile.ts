@@ -11,6 +11,14 @@ export const phone = {
   href: "tel:+97686238974",
 };
 
+/**
+ * Facebook Messenger chat with the Flow Agency page, with `message` already
+ * typed in the chat box (used by the pricing "Get started" buttons).
+ */
+export function messengerLink(message: string) {
+  return `https://m.me/flowagency.mn?text=${encodeURIComponent(message)}`;
+}
+
 export const socials = [
   {
     id: "instagram",

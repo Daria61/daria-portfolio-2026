@@ -1,4 +1,5 @@
 import { packages, posterPackages } from "@/content/pricing";
+import { messengerLink } from "@/content/profile";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { InfoIcon } from "./icons";
 import { PriceCard } from "./price-card";
@@ -6,6 +7,15 @@ import { SectionHeading } from "./section-heading";
 import { SparkleIcon } from "./sparkle-icon";
 
 const formatTugrik = (n: number) => n.toLocaleString("en-US");
+
+/** "Get started": opens Messenger with "…I'd like to order the <package> package." typed in. */
+function orderButton(dict: Dictionary, message: string, packageName: string) {
+  return {
+    href: messengerLink(message.replace("{package}", packageName)),
+    label: dict.pricing.labels.cta,
+    newTabLabel: dict.work.newTab,
+  };
+}
 
 /** Highlighted one-line callout (launch promo, "why it matters"). */
 function Callout({ label, text }: { label: string; text: string }) {
@@ -65,7 +75,7 @@ export function PricingSection({ dict }: { dict: Dictionary }) {
               meta={{ icon: "clock", text: item.delivery }}
               features={item.features}
               note={item.care}
-              cta={{ href: "#contact", label: text.labels.cta }}
+              cta={orderButton(dict, text.labels.message, item.name)}
               badge={pkg.featured ? text.labels.mostPopular : undefined}
             />
           );
@@ -94,11 +104,7 @@ export function PosterPricingSection({ dict }: { dict: Dictionary }) {
         intro={text.intro}
       />
 
-      <div className="mt-10 md:mt-14">
-        <Callout label={text.why.label} text={text.why.text} />
-      </div>
-
-      <ul className="mt-6 grid gap-5 lg:grid-cols-3">
+      <ul className="mt-10 grid gap-5 md:mt-14 lg:grid-cols-3">
         {posterPackages.map((pkg, index) => {
           const item = text.packages[pkg.id];
           return (
@@ -118,7 +124,7 @@ export function PosterPricingSection({ dict }: { dict: Dictionary }) {
               }
               meta={{ icon: "stack", text: item.quantity }}
               features={item.features}
-              cta={{ href: "#contact", label: dict.pricing.labels.cta }}
+              cta={orderButton(dict, text.labels.message, item.name)}
               badge={pkg.featured ? text.labels.bestSeller : undefined}
             />
           );
