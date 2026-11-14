@@ -37,3 +37,10 @@ export const posterPackages: PosterPackage[] = [
   { id: "starter", price: 350_000, unit: "month", perPoster: 58_000 }, // 6 posters
   { id: "growth", price: 600_000, unit: "month", perPoster: 50_000, featured: true }, // 12 posters
 ];
+
+// "Try & Decide": a landing page the client tests for 30 days before choosing
+// a package (text under pricing.trial in the dictionaries).
+export const trial = {
+  /** Upfront price in tögrög; the rest of the chosen package is paid after. */
+  price: 99_000,
+};

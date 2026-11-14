@@ -53,6 +53,14 @@ export function CheckIcon({ className }: IconProps) {
   );
 }
 
+export function XIcon({ className }: IconProps) {
+  return (
+    <Icon className={className} strokeWidth={2.25}>
+      <path d="M6.5 6.5 17.5 17.5M17.5 6.5 6.5 17.5" />
+    </Icon>
+  );
+}
+
 export function ClockIcon({ className }: IconProps) {
   return (
     <Icon className={className}>

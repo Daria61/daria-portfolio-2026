@@ -169,6 +169,37 @@
       "label": "Launch promo",
       "text": "First 2 orders get Business Pro for just 990,000₮ (in exchange for a review and a spot in my portfolio)."
     },
+    "trial": {
+      "badge": "Risk-free",
+      "name": "Try & Decide",
+      "tagline": "Get a landing page for {price}₮, test it for 30 days, then decide.",
+      "unit": "/ 30 days",
+      "cta": "Try it",
+      "message": "Hello! I'd like to order the Try & Decide offer.",
+      "steps": [
+        {
+          "title": "I build your landing page",
+          "text": "Made for your business and put live on a temporary link."
+        },
+        {
+          "title": "You test it for 30 days",
+          "text": "Send your Facebook ads to it and see how many customers it brings in."
+        },
+        {
+          "title": "You decide",
+          "text": "After 30 days, choose one:"
+        }
+      ],
+      "keep": {
+        "label": "Love it",
+        "text": "Pay the rest of the package you choose. I connect your own domain and hand the site over to you with full ownership."
+      },
+      "stop": {
+        "label": "Not for you",
+        "text": "I take the page down. You've only spent {price}₮."
+      },
+      "note": "If you keep the site, the domain (about 40,000₮ a year) and hosting are paid separately."
+    },
     "packages": {
       "starter": {
         "name": "Starter",
